@@ -1,7 +1,6 @@
 package com.halilkrkn.jetpackcompose_tutorial.components
 
 import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -58,7 +57,7 @@ fun TextCustomization(){
                     withStyle(style = ParagraphStyle(textAlign = TextAlign.Center)) {
                         withStyle(
                             style = SpanStyle(
-                                color = MaterialTheme.colorScheme.error,
+                                color = Color.Red,
                                 fontSize = 30.sp,
                                 fontWeight = FontWeight.Bold
                             )
@@ -69,7 +68,7 @@ fun TextCustomization(){
                         append("C")
                         withStyle(
                             style = SpanStyle(
-                                color = MaterialTheme.colorScheme.error,
+                                color = Color.Red,
                                 fontSize = 30.sp,
                                 fontWeight = FontWeight.Bold
                             )
