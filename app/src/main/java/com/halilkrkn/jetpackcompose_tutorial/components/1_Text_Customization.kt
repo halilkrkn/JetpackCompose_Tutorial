@@ -58,7 +58,7 @@ fun TextCustomization(){
                     withStyle(style = ParagraphStyle(textAlign = TextAlign.Center)) {
                         withStyle(
                             style = SpanStyle(
-                                color = MaterialTheme.colorScheme.error,
+                                color = Color.Red,
                                 fontSize = 30.sp,
                                 fontWeight = FontWeight.Bold
                             )
@@ -69,7 +69,7 @@ fun TextCustomization(){
                         append("C")
                         withStyle(
                             style = SpanStyle(
-                                color = MaterialTheme.colorScheme.error,
+                                color = Color.Red,
                                 fontSize = 30.sp,
                                 fontWeight = FontWeight.Bold
                             )
