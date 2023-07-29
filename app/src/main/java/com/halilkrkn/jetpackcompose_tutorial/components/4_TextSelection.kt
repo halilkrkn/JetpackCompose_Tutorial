@@ -1,6 +1,5 @@
 package com.halilkrkn.jetpackcompose_tutorial.components
 
-import android.view.textclassifier.TextSelection
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.text.selection.DisableSelection
@@ -9,7 +8,6 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.halilkrkn.jetpackcompose_tutorial.Greeting
 import com.halilkrkn.jetpackcompose_tutorial.ui.theme.JetpackCompose_TutorialTheme
 
 @Composable
