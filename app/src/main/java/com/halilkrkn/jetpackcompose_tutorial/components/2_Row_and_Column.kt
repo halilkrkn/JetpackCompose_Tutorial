@@ -22,7 +22,7 @@ import com.halilkrkn.jetpackcompose_tutorial.ui.theme.JetpackCompose_TutorialThe
 
 @Composable
 @Preview(showBackground = true)
-fun Column() {
+fun ColumnCustomization() {
     JetpackCompose_TutorialTheme {
         Column(
             modifier = Modifier
@@ -49,7 +49,7 @@ fun ColumnScope.CustomColumnItem(weight: Float, color: Color = MaterialTheme.col
 
 @Composable
 @Preview(showBackground = true)
-fun Rows() {
+fun RowCustomization() {
     JetpackCompose_TutorialTheme {
         Row(
             modifier = Modifier
