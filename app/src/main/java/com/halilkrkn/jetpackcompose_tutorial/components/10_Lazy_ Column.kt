@@ -4,15 +4,19 @@ import android.util.Log
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.itemsIndexed
+import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -36,10 +40,37 @@ fun LazyColumnCustomization() {
 
         val section = listOf("A", "B", "C", "D", "E", "F", "G")
 
-        LazyColumn(
-            contentPadding = PaddingValues(all = 12.dp),
-            verticalArrangement = Arrangement.spacedBy(12.dp),
+        Column(
+            modifier = Modifier
+                .background(color = Color.LightGray)
+                .fillMaxSize(),
+            verticalArrangement = Arrangement.Center,
+            horizontalAlignment = Alignment.CenterHorizontally
         ) {
+            LazyRow(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(12.dp),
+            ) {
+                items(10) {
+                    Text(
+                        modifier = Modifier
+                            .clickable {
+                                Log.d("LazyRow", "$it Clicked")
+                            }
+                            .padding(6.dp),
+                        text = "Item $it",
+                    )
+                }
+            }
+
+            LazyColumn(
+                modifier = Modifier
+                    .fillMaxHeight()
+                    .background(color = Color.LightGray),
+                contentPadding = PaddingValues(all = 12.dp),
+                verticalArrangement = Arrangement.spacedBy(12.dp),
+            ) {
 //                items(getAllData.size) { index ->
 //                    CustomItem(getAllData[index])
 //                }
@@ -51,34 +82,38 @@ fun LazyColumnCustomization() {
 //                Log.d("LazyColumn", index.toString())
 //                CustomItem(person)
 //            }
-            section.forEach { section ->
-                stickyHeader {
-                     Text(
-                        text = "Section $section",
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .border(
-                                width = 2.dp,
-                                color = Color.Black,
-                                shape = MaterialTheme.shapes.small
-                            )
-                            .background(color = Color.LightGray)
-                            .padding(8.dp),
-                        color = Color.Black,
-                        fontSize = MaterialTheme.typography.headlineMedium.fontSize,
-                        fontWeight = FontWeight.Bold
-                    )
-                }
-                items(10) {
-                    Text(
-                        modifier = Modifier.padding(6.dp),
-                        text = "Item $it from the section $section",
-                    )
+                section.forEach { section ->
+                    stickyHeader {
+                        Text(
+                            text = "Section $section",
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .border(
+                                    width = 2.dp,
+                                    color = Color.Black,
+                                    shape = MaterialTheme.shapes.small
+                                )
+                                .background(color = Color.LightGray)
+                                .padding(8.dp),
+                            color = Color.Black,
+                            fontSize = MaterialTheme.typography.headlineMedium.fontSize,
+                            fontWeight = FontWeight.Bold
+                        )
+                    }
+                    items(10) {
+                        Text(
+                            modifier = Modifier.padding(6.dp),
+                            text = "Item $it from the section $section",
+                        )
+                    }
+
                 }
 
             }
-
         }
+        
+
+
 
 
     }
