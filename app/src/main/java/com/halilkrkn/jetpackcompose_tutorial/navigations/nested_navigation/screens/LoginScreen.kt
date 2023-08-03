@@ -1,4 +1,4 @@
-package com.halilkrkn.jetpackcompose_tutorial.navigations.screens
+package com.halilkrkn.jetpackcompose_tutorial.navigations.nested_navigation.screens
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box

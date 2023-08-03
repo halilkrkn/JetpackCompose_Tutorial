@@ -6,8 +6,8 @@ import androidx.navigation.compose.composable
 import androidx.navigation.navigation
 import com.halilkrkn.jetpackcompose_tutorial.navigations.nested_navigation.AUTHENTICATION_ROUTE
 import com.halilkrkn.jetpackcompose_tutorial.navigations.nested_navigation.Screens
-import com.halilkrkn.jetpackcompose_tutorial.navigations.screens.LoginScreen
-import com.halilkrkn.jetpackcompose_tutorial.navigations.screens.SignUpScreen
+import com.halilkrkn.jetpackcompose_tutorial.navigations.nested_navigation.screens.LoginScreen
+import com.halilkrkn.jetpackcompose_tutorial.navigations.nested_navigation.screens.SignUpScreen
 
 fun NavGraphBuilder.authNavGraph(
     navController: NavHostController
