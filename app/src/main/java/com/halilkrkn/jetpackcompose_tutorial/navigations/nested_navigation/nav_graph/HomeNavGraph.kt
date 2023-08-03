@@ -10,8 +10,8 @@ import com.halilkrkn.jetpackcompose_tutorial.navigations.nested_navigation.DETAI
 import com.halilkrkn.jetpackcompose_tutorial.navigations.nested_navigation.DETAIL_ARGUMENT_NAME
 import com.halilkrkn.jetpackcompose_tutorial.navigations.nested_navigation.HOME_ROUTE
 import com.halilkrkn.jetpackcompose_tutorial.navigations.nested_navigation.Screens
-import com.halilkrkn.jetpackcompose_tutorial.navigations.screens.FavouriteScreen
-import com.halilkrkn.jetpackcompose_tutorial.navigations.screens.HomeScreen
+import com.halilkrkn.jetpackcompose_tutorial.navigations.nested_navigation.screens.FavouriteScreen
+import com.halilkrkn.jetpackcompose_tutorial.navigations.nested_navigation.screens.HomeScreen
 
 
 fun NavGraphBuilder.homeNavGraph(
