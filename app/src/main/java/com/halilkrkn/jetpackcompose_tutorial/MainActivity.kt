@@ -13,6 +13,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.halilkrkn.jetpackcompose_tutorial.components.SetupNavGraph
+import com.halilkrkn.jetpackcompose_tutorial.navigations.nested_navigation.nav_graph.NavGraph
 import com.halilkrkn.jetpackcompose_tutorial.ui.theme.JetpackCompose_TutorialTheme
 
 class MainActivity : ComponentActivity() {
@@ -33,7 +34,8 @@ class MainActivity : ComponentActivity() {
 
                     // Navigation - Sayfalar, Ekranlar arası geçiş için MainActivity'de Host olarak kurduk.
                     navController = rememberNavController()
-                    SetupNavGraph(navController = navController)
+//                    SetupNavGraph(navController = navController)
+                    NavGraph(navController = navController)
 
                 }
             }
