@@ -18,6 +18,7 @@ import com.halilkrkn.jetpackcompose_tutorial.components.SearchBarMainScreen
 import com.halilkrkn.jetpackcompose_tutorial.components.SetupNavGraph
 import com.halilkrkn.jetpackcompose_tutorial.navigations.bottom_navigation.screens.MainScreen
 import com.halilkrkn.jetpackcompose_tutorial.navigations.nested_navigation.nav_graph.NavGraph
+import com.halilkrkn.jetpackcompose_tutorial.splash_screen.navigation.SplashNavGraph
 import com.halilkrkn.jetpackcompose_tutorial.ui.theme.JetpackCompose_TutorialTheme
 import com.halilkrkn.jetpackcompose_tutorial.viewmodel.MainViewModel
 
@@ -45,6 +46,7 @@ class MainActivity : ComponentActivity() {
 //                    NavGraph(navController = navController)  // nested navigation için
 //                    MainScreen() // Bottom Navigation için
 //                    SearchBarMainScreen(mainViewModel = mainViewModel) // Search Bar için
+                      SplashNavGraph(navController = navController)
 
 
                 }
