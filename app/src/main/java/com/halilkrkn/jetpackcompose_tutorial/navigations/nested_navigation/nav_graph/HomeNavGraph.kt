@@ -4,7 +4,7 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
 import androidx.navigation.NavType
 import androidx.navigation.compose.composable
-import androidx.navigation.compose.navArgument
+import androidx.navigation.navArgument
 import androidx.navigation.navigation
 import com.halilkrkn.jetpackcompose_tutorial.navigations.nested_navigation.DETAIL_ARGUMENT_ID
 import com.halilkrkn.jetpackcompose_tutorial.navigations.nested_navigation.DETAIL_ARGUMENT_NAME
