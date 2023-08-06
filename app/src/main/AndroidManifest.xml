@@ -17,6 +17,11 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".onboarding_screen.OnBoardingMainActivity"
+            android:exported="true"
+            android:label="@string/title_activity_on_boarding_main"
+            android:theme="@style/Theme.CustomSplashScreenTheme" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"

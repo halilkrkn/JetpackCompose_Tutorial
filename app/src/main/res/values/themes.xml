@@ -4,6 +4,7 @@
     <style name="Theme.JetpackCompose_Tutorial" parent="android:Theme.Material.Light.NoActionBar">
         <item name="android:statusBarColor">@color/purple_700</item>
     </style>
+
     <style name="Theme.CustomSplashScreenTheme" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">@color/purple_700</item>
         <item name="windowSplashScreenAnimatedIcon">@drawable/baseline_whatshot_24</item>
