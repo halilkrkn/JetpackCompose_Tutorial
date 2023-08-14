@@ -29,6 +29,7 @@ import com.halilkrkn.jetpackcompose_tutorial.ui.theme.JetpackCompose_TutorialThe
 import com.halilkrkn.jetpackcompose_tutorial.viewmodel.MainViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
+import com.halilkrkn.jetpackcompose_tutorial.navigations.parcelable_object_navigation.nav_graph.SetupNavGraph
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
@@ -77,7 +78,10 @@ class MainActivity : ComponentActivity() {
 //                    )
                 }
 //                SwipeComponent() // Swipe Component
-                SelectableItemAnimated() // Selectable Item Animated
+//                SelectableItemAnimated() // Selectable Item Animated
+                SetupNavGraph(
+                    navController = navController
+                )
             }
         }
     }
