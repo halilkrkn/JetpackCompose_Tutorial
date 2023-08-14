@@ -18,6 +18,7 @@ import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.halilkrkn.jetpackcompose_tutorial.components.SearchBarMainScreen
+import com.halilkrkn.jetpackcompose_tutorial.components.SelectableItemAnimated
 import com.halilkrkn.jetpackcompose_tutorial.components.SwipeComponent
 import com.halilkrkn.jetpackcompose_tutorial.navigations.bottom_navigation.screens.MainScreen
 import com.halilkrkn.jetpackcompose_tutorial.navigations.nested_navigation.nav_graph.NavGraph
@@ -75,7 +76,8 @@ class MainActivity : ComponentActivity() {
 //                        startDestination = startDestination
 //                    )
                 }
-                SwipeComponent()
+//                SwipeComponent() // Swipe Component
+                SelectableItemAnimated() // Selectable Item Animated
             }
         }
     }
