@@ -22,6 +22,7 @@ import com.halilkrkn.jetpackcompose_tutorial.components.SearchBarMainScreen
 import com.halilkrkn.jetpackcompose_tutorial.components.SelectableItemAnimated
 import com.halilkrkn.jetpackcompose_tutorial.components.SwipeComponent
 import com.halilkrkn.jetpackcompose_tutorial.navigations.bottom_navigation.screens.MainScreen
+import com.halilkrkn.jetpackcompose_tutorial.navigations.bottombar_nested_navigation.graphs.RootNavigationGraph
 import com.halilkrkn.jetpackcompose_tutorial.navigations.nested_navigation.nav_graph.NavGraph
 import com.halilkrkn.jetpackcompose_tutorial.onboarding_screen.navigation.SetupNavGraph
 import com.halilkrkn.jetpackcompose_tutorial.onboarding_screen.viewmodel.SplashViewModel
@@ -81,7 +82,8 @@ class MainActivity : ComponentActivity() {
 //                SwipeComponent() // Swipe Component
 //                SelectableItemAnimated() // Selectable Item Animated
 //                SetupNavGraph(navController = navController) // Pass a Parcelable Object with Navigation Different Between Screens
-                HyperlinkTextCustom()
+//                HyperlinkTextCustom()
+                RootNavigationGraph(navController = navController) // Nested Navigation BottomBar
             }
         }
     }
