@@ -17,6 +17,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
+import com.halilkrkn.jetpackcompose_tutorial.components.BlurEffect
 import com.halilkrkn.jetpackcompose_tutorial.components.HyperlinkTextCustom
 import com.halilkrkn.jetpackcompose_tutorial.components.PhotoPicker
 import com.halilkrkn.jetpackcompose_tutorial.components.SearchBarMainScreen
@@ -87,7 +88,8 @@ class MainActivity : ComponentActivity() {
 //                HyperlinkTextCustom()
 //                RootNavigationGraph(navController = navController) // Nested Navigation BottomBar
 //                  PhotoPicker() // Photo Picker
-                TopBarCustom() // TopBar Component
+//                TopBarCustom() // TopBar Component
+                BlurEffect() // Blur Effect Component
             }
         }
     }
