@@ -3,6 +3,7 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
     id 'com.google.dagger.hilt.android'
+    id 'kotlin-parcelize'
 }
 
 android {
@@ -61,7 +62,7 @@ dependencies {
     implementation 'androidx.compose.material3:material3'
 
 
-//    implementation "io.coil-kt:coil-compose:2.2.2"
+    implementation "io.coil-kt:coil-compose:2.2.2"
     implementation "io.coil-kt:coil-compose:1.3.0"
 
     // Compose dependencies
@@ -90,6 +91,9 @@ dependencies {
     kapt "com.google.dagger:hilt-compiler:2.44"
     kapt "androidx.hilt:hilt-compiler:1.0.0"
     implementation 'androidx.hilt:hilt-navigation-compose:1.1.0-alpha01'
+
+    // Swipe Component
+    implementation "me.saket.swipe:swipe:1.2.0"
 
 
 

@@ -17,8 +17,13 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
+import com.halilkrkn.jetpackcompose_tutorial.components.HyperlinkTextCustom
+import com.halilkrkn.jetpackcompose_tutorial.components.PhotoPicker
 import com.halilkrkn.jetpackcompose_tutorial.components.SearchBarMainScreen
+import com.halilkrkn.jetpackcompose_tutorial.components.SelectableItemAnimated
+import com.halilkrkn.jetpackcompose_tutorial.components.SwipeComponent
 import com.halilkrkn.jetpackcompose_tutorial.navigations.bottom_navigation.screens.MainScreen
+import com.halilkrkn.jetpackcompose_tutorial.navigations.bottombar_nested_navigation.graphs.RootNavigationGraph
 import com.halilkrkn.jetpackcompose_tutorial.navigations.nested_navigation.nav_graph.NavGraph
 import com.halilkrkn.jetpackcompose_tutorial.onboarding_screen.navigation.SetupNavGraph
 import com.halilkrkn.jetpackcompose_tutorial.onboarding_screen.viewmodel.SplashViewModel
@@ -27,24 +32,27 @@ import com.halilkrkn.jetpackcompose_tutorial.ui.theme.JetpackCompose_TutorialThe
 import com.halilkrkn.jetpackcompose_tutorial.viewmodel.MainViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
+import com.halilkrkn.jetpackcompose_tutorial.navigations.parcelable_object_navigation.nav_graph.SetupNavGraph
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
 
     lateinit var navController: NavHostController
     private val mainViewModel: MainViewModel by viewModels()
-    @Inject
-    lateinit var splashViewModel: SplashViewModel
+
+//Onboarding Screen İçin
+//    @Inject
+//    lateinit var splashViewModel: SplashViewModel
 
     @SuppressLint("SuspiciousIndentation")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
 
-
-        installSplashScreen().setKeepOnScreenCondition {
-            !splashViewModel.isLoading.value
-        }
+//Onboarding Screen İçin
+//        installSplashScreen().setKeepOnScreenCondition {
+//            !splashViewModel.isLoading.value
+//        }
 
         setContent {
             JetpackCompose_TutorialTheme {
@@ -64,13 +72,20 @@ class MainActivity : ComponentActivity() {
 //                    SearchBarMainScreen(mainViewModel = mainViewModel) // Search Bar için
 //                    SplashNavGraph(navController = navController)
 
-                    val startDestination by splashViewModel.startDestination
-                    val navController = rememberNavController()
-                   SetupNavGraph(
-                        navController = navController,
-                        startDestination = startDestination
-                    )
+                    //Onboarding Screen İçin
+//                    val startDestination by splashViewModel.startDestination
+//                    val navController = rememberNavController()
+//                   SetupNavGraph(
+//                        navController = navController,
+//                        startDestination = startDestination
+//                    )
                 }
+//                SwipeComponent() // Swipe Component
+//                SelectableItemAnimated() // Selectable Item Animated
+//                SetupNavGraph(navController = navController) // Pass a Parcelable Object with Navigation Different Between Screens
+//                HyperlinkTextCustom()
+//                RootNavigationGraph(navController = navController) // Nested Navigation BottomBar
+//                  PhotoPicker() // Photo Picker
             }
         }
     }
