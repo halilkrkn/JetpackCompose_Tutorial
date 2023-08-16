@@ -22,6 +22,7 @@ import com.halilkrkn.jetpackcompose_tutorial.components.PhotoPicker
 import com.halilkrkn.jetpackcompose_tutorial.components.SearchBarMainScreen
 import com.halilkrkn.jetpackcompose_tutorial.components.SelectableItemAnimated
 import com.halilkrkn.jetpackcompose_tutorial.components.SwipeComponent
+import com.halilkrkn.jetpackcompose_tutorial.components.TopBarCustom
 import com.halilkrkn.jetpackcompose_tutorial.navigations.bottom_navigation.screens.MainScreen
 import com.halilkrkn.jetpackcompose_tutorial.navigations.bottombar_nested_navigation.graphs.RootNavigationGraph
 import com.halilkrkn.jetpackcompose_tutorial.navigations.nested_navigation.nav_graph.NavGraph
@@ -86,6 +87,7 @@ class MainActivity : ComponentActivity() {
 //                HyperlinkTextCustom()
 //                RootNavigationGraph(navController = navController) // Nested Navigation BottomBar
 //                  PhotoPicker() // Photo Picker
+                TopBarCustom() // TopBar Component
             }
         }
     }
