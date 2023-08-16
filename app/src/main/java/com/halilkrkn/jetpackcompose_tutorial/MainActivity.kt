@@ -18,6 +18,7 @@ import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.halilkrkn.jetpackcompose_tutorial.components.HyperlinkTextCustom
+import com.halilkrkn.jetpackcompose_tutorial.components.PhotoPicker
 import com.halilkrkn.jetpackcompose_tutorial.components.SearchBarMainScreen
 import com.halilkrkn.jetpackcompose_tutorial.components.SelectableItemAnimated
 import com.halilkrkn.jetpackcompose_tutorial.components.SwipeComponent
@@ -83,7 +84,8 @@ class MainActivity : ComponentActivity() {
 //                SelectableItemAnimated() // Selectable Item Animated
 //                SetupNavGraph(navController = navController) // Pass a Parcelable Object with Navigation Different Between Screens
 //                HyperlinkTextCustom()
-                RootNavigationGraph(navController = navController) // Nested Navigation BottomBar
+//                RootNavigationGraph(navController = navController) // Nested Navigation BottomBar
+//                  PhotoPicker() // Photo Picker
             }
         }
     }
