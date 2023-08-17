@@ -17,6 +17,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
+import com.halilkrkn.jetpackcompose_tutorial.components.BlurEffect
 import com.halilkrkn.jetpackcompose_tutorial.components.SetupNavGraph
 import com.halilkrkn.jetpackcompose_tutorial.navigations.bottom_navigation.bottom_bar_with_badges.screens.HomeScreen
 import com.halilkrkn.jetpackcompose_tutorial.components.HyperlinkTextCustom
@@ -24,6 +25,7 @@ import com.halilkrkn.jetpackcompose_tutorial.components.PhotoPicker
 import com.halilkrkn.jetpackcompose_tutorial.components.SearchBarMainScreen
 import com.halilkrkn.jetpackcompose_tutorial.components.SelectableItemAnimated
 import com.halilkrkn.jetpackcompose_tutorial.components.SwipeComponent
+import com.halilkrkn.jetpackcompose_tutorial.components.TopBarCustom
 import com.halilkrkn.jetpackcompose_tutorial.navigations.bottom_navigation.screens.MainScreen
 import com.halilkrkn.jetpackcompose_tutorial.navigations.bottombar_nested_navigation.graphs.RootNavigationGraph
 import com.halilkrkn.jetpackcompose_tutorial.navigations.nested_navigation.nav_graph.NavGraph
@@ -91,6 +93,8 @@ class MainActivity : ComponentActivity() {
 //                HyperlinkTextCustom()
 //                RootNavigationGraph(navController = navController) // Nested Navigation BottomBar
 //                  PhotoPicker() // Photo Picker
+//                TopBarCustom() // TopBar Component
+                BlurEffect() // Blur Effect Component
             }
         }
     }
