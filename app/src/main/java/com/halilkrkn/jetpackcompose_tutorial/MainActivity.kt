@@ -17,6 +17,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
+import com.halilkrkn.jetpackcompose_tutorial.components.SetupNavGraph
+import com.halilkrkn.jetpackcompose_tutorial.navigations.bottom_navigation.bottom_bar_with_badges.screens.HomeScreen
 import com.halilkrkn.jetpackcompose_tutorial.components.HyperlinkTextCustom
 import com.halilkrkn.jetpackcompose_tutorial.components.PhotoPicker
 import com.halilkrkn.jetpackcompose_tutorial.components.SearchBarMainScreen
@@ -68,6 +70,9 @@ class MainActivity : ComponentActivity() {
                     navController = rememberNavController()
 //                    SetupNavGraph(navController = navController) // 11_Navigations için
 //                    NavGraph(navController = navController)  // nested navigation için
+
+//                    MainScreen()
+                      Home
 //                    MainScreen() // Bottom Navigation için
 //                    SearchBarMainScreen(mainViewModel = mainViewModel) // Search Bar için
 //                    SplashNavGraph(navController = navController)
