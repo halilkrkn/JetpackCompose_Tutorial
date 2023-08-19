@@ -74,7 +74,7 @@ class MainActivity : ComponentActivity() {
 //                    NavGraph(navController = navController)  // nested navigation için
 
 //                    MainScreen()
-                      Home
+//                      HomeScreen() // Bottom Navigation Bar with Badges
 //                    MainScreen() // Bottom Navigation için
 //                    SearchBarMainScreen(mainViewModel = mainViewModel) // Search Bar için
 //                    SplashNavGraph(navController = navController)
@@ -94,7 +94,7 @@ class MainActivity : ComponentActivity() {
 //                RootNavigationGraph(navController = navController) // Nested Navigation BottomBar
 //                  PhotoPicker() // Photo Picker
 //                TopBarCustom() // TopBar Component
-                BlurEffect() // Blur Effect Component
+//                BlurEffect() // Blur Effect Component
             }
         }
     }

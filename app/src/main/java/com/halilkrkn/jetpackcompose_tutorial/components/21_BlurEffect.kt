@@ -45,6 +45,7 @@ fun BlurEffect() {
             } else {
                 if (checked) Color.White else Color.White
             },
+            color = if (checked) Color.White else Color.Black,
             fontSize = MaterialTheme.typography.displayLarge.fontSize
         )
         Spacer(modifier = Modifier.height(24.dp))
