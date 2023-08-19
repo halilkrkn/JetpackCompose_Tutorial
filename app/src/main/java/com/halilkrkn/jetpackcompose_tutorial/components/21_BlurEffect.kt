@@ -1,6 +1,7 @@
 package com.halilkrkn.jetpackcompose_tutorial.components
 
 import androidx.compose.animation.core.animateDpAsState
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -39,6 +40,11 @@ fun BlurEffect() {
                 edgeTreatment = BlurredEdgeTreatment.Unbounded
             ),
             text = "Hello World!",
+            color = if (!isSystemInDarkTheme()){
+                if (checked) Color.Black else Color.Black
+            } else {
+                if (checked) Color.White else Color.White
+            },
             color = if (checked) Color.White else Color.Black,
             fontSize = MaterialTheme.typography.displayLarge.fontSize
         )
