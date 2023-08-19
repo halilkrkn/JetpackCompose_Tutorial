@@ -40,7 +40,11 @@ fun BlurEffect() {
                 edgeTreatment = BlurredEdgeTreatment.Unbounded
             ),
             text = "Hello World!",
-            color = if (checked) Color.White else Color.Black,
+            color = if (!isSystemInDarkTheme()){
+                if (checked) Color.Black else Color.Black
+            } else {
+                if (checked) Color.White else Color.White
+            },
             fontSize = MaterialTheme.typography.displayLarge.fontSize
         )
         Spacer(modifier = Modifier.height(24.dp))
